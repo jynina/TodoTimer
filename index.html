@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" >
+
+</head>
+<body>
+
+<div class="container">
+<div class="pomodoro">
+    <div class="timer">
+        <button id="focus" class="btn btn-focus">Focus</button>
+        <button id="shortbreak" class="btn btn-shortbreak">Short Break</button>
+        <button id="longbreak" class="btn btn-longbreak">Long Break</button>
+    </div>
+    <div class="time-btn-container">
+        <span id="time"></span>
+            <div class="btn-container">
+                <button id="btn-start" class="show">Start</button>
+                <button id="btn-pause" class="hide">Pause</button>
+                <button id="btn-reset" class="hide"><img src="https://cdn-icons-png.flaticon.com/512/93/93641.png"></button>
+            </div>
+    </div>
+</div>
+
+    <div class="todo-app">
+        <h2>To-Do List <img src="https://cdn-icons-png.flaticon.com/512/5058/5058451.png"></h2>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add your text">
+            <button class="add" onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+            <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
