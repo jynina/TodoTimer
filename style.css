@@ -14,7 +14,7 @@
 }
 
 .pomodoro{
-    width: min(90%, 500px);
+    width: 100%;
     max-width: 540px;
     position: relative;
     background-color: white;

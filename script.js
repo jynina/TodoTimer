@@ -39,8 +39,13 @@ reset.addEventListener(
         minCount = 24;
         break;
     }
-    count = 59;
-    time.textContent = `${minCount + 1}:00`;
+    if (confirm('Are you sure you want to reset?')) {
+      count = 59;
+      time.textContent = `${minCount + 1}:00`;;
+    } else {
+      // Do nothing!
+    }
+    
   })
 );
 
@@ -138,6 +143,7 @@ listContainer.addEventListener("click", function(e){
         saveData()
     }
 }, false);
+
 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
